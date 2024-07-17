@@ -45,6 +45,8 @@ describe("getSizeTable", () => {
     const rawData = { S: { 가슴: "100cm" } };
     const result = getSizeTable(rawData);
 
+    // ci/cd 실패 테스트
+    expect(true).toBe(false);
     expect(result).toBeUndefined();
     expect(consoleSpy).toHaveBeenCalledWith("Fail to create Table");
     consoleSpy.mockRestore();
