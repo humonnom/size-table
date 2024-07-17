@@ -4,7 +4,7 @@ jest.mock("table-builder");
 
 describe("getSizeTable", () => {
   expect(true).toBe(false);
-  expect(true).toBe(false);
+
   beforeEach(() => {
     jest.resetAllMocks();
   });
