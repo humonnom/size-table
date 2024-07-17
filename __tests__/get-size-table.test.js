@@ -40,13 +40,14 @@ describe("getSizeTable", () => {
 
     const consoleSpy = jest
       .spyOn(console, "error")
-      .mockImplementation(() => {});
+      .mockImplementation(() => { });
 
     const rawData = { S: { 가슴: "100cm" } };
     const result = getSizeTable(rawData);
 
     expect(result).toBeUndefined();
     expect(consoleSpy).toHaveBeenCalledWith("Fail to create Table");
+    expect(true).toBe(false);
     consoleSpy.mockRestore();
   });
 });
